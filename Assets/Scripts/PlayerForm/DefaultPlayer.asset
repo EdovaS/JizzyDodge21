@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7256225110b9afc48801d2e70d7bf52e, type: 3}
   m_Name: DefaultPlayer
   m_EditorClassIdentifier: 
-  LeftHand: {fileID: 0}
-  RightHand: {fileID: 0}
-  LeftEye: {fileID: 0}
-  RightEye: {fileID: 0}
-  FaceBg: {fileID: 0}
-  Body: {fileID: 0}
+  LeftHand: {fileID: 767707184873315739, guid: 3afe7201d2dad8d4fb9797666b6548be, type: 3}
+  RightHand: {fileID: -1626800247895703097, guid: 3afe7201d2dad8d4fb9797666b6548be, type: 3}
+  LeftEye: {fileID: -1364899492155407499, guid: 3afe7201d2dad8d4fb9797666b6548be, type: 3}
+  RightEye: {fileID: -5891588800096086715, guid: 3afe7201d2dad8d4fb9797666b6548be, type: 3}
+  FaceBg: {fileID: 257760613223902398, guid: 3afe7201d2dad8d4fb9797666b6548be, type: 3}
+  Body: {fileID: -28926374181417723, guid: 3afe7201d2dad8d4fb9797666b6548be, type: 3}
