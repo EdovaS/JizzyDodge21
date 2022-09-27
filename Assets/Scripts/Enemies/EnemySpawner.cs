@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float _timeBetweenSpawn;
     private float _time;
 
-    public ObjectPool<Enemy> _pool;
+    private ObjectPool<Enemy> _pool;
 
     private void Start()
     {

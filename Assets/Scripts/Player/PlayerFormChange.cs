@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerFormChange : MonoBehaviour
@@ -31,6 +32,13 @@ public class PlayerFormChange : MonoBehaviour
     [SerializeField] private PlayerForm defaultPlayerForm;
     [SerializeField] private PlayerForm bluePlayerForm;
     [SerializeField] private PlayerForm redPlayerForm;
+
+    #endregion
+
+    #region TagState_Objects_Reference
+
+    [SerializeField] private GameObject _stateOneCollider;
+    [SerializeField] private GameObject _stateSecondCollider;
 
     #endregion
     
@@ -75,17 +83,24 @@ public class PlayerFormChange : MonoBehaviour
         if (!Input.GetKey(KeyCode.A) || !Input.GetKey(KeyCode.D))
         {
             _playerForm = defaultPlayerForm;
+            _stateOneCollider.SetActive(false);
+            _stateSecondCollider.SetActive(false);
         }
         
         if (Input.GetKey(KeyCode.A))
         {
             _playerForm = bluePlayerForm;
+            _stateOneCollider.SetActive(true);
+            _stateSecondCollider.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             _playerForm = redPlayerForm;
+            _stateOneCollider.SetActive(false);
+            _stateSecondCollider.SetActive(true);
         }
         
     }
+    
 }
