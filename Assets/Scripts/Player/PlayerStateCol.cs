@@ -10,7 +10,6 @@ public class PlayerStateCol : MonoBehaviour
 
     [SerializeField] private GameObject _BlueParticleEffect;
     [SerializeField] private GameObject _RedParticleEffect;
-    [SerializeField] private Transform _particlePos;
 
     [SerializeField] private Animator _animator;
     
@@ -30,9 +29,10 @@ public class PlayerStateCol : MonoBehaviour
             if (other.CompareTag("EnemyOne"))
             {
                 _animator.SetTrigger("Attack");
-                // Instantiate the right Particle effect
-                
-                Instantiate(_BlueParticleEffect, _particlePos.position, Quaternion.identity);
+
+                // Play the particles
+                _BlueParticleEffect.GetComponent<ParticleSystem>().Play();
+                //Instantiate(_BlueParticleEffect, _particlePos.position, Quaternion.identity);
                 
                 var enemyTransform = other.gameObject.GetComponent<Transform>();
                 enemyTransform.position = new Vector3(enemyTransform.position.x - 10, enemyTransform.position.y);
@@ -46,8 +46,9 @@ public class PlayerStateCol : MonoBehaviour
             {
                 _animator.SetTrigger("Attack");
                 
-                // Instantiate the right Particle effect 
-                Instantiate(_RedParticleEffect, _particlePos.position, Quaternion.identity);
+                // Play the Particle System
+                _RedParticleEffect.GetComponent<ParticleSystem>().Play();
+                //Instantiate(_RedParticleEffect, _particlePos.position, Quaternion.identity);
                 
                 var enemyTransform = other.gameObject.GetComponent<Transform>();
                 enemyTransform.position = new Vector3(enemyTransform.position.x - 10, enemyTransform.position.y);
