@@ -18,6 +18,19 @@ public class EnemySpawner : MonoBehaviour
             OnReturnToPool, OnDestroyObject, false, 20, 20);
     }
 
+    private void Update()
+    {
+        _time += Time.deltaTime;
+
+        if (_time > _timeBetweenSpawn)
+        {
+            _pool.Get();
+            _time = 0;
+        }
+    }
+
+    // ---------- Object Pooling ------------- //
+    
     private Enemy CreatePooledObject()
     {
         Enemy instance = Instantiate(_Enemies[Random.Range(0,2)].GetComponent<Enemy>(), transform.position, quaternion.identity);
@@ -47,17 +60,6 @@ public class EnemySpawner : MonoBehaviour
     private void OnDestroyObject(Enemy instance)
     {
         Destroy(instance);
-    }
-
-    private void Update()
-    {
-        _time += Time.deltaTime;
-
-        if (_time > _timeBetweenSpawn)
-        {
-            _pool.Get();
-            _time = 0;
-        }
     }
 
     private void SpawnEnemy(Enemy instance)
