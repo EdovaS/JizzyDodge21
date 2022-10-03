@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -23,6 +20,12 @@ public class Score : MonoBehaviour
     {
         _levelData.AddToScore(1);
         _levelData.AddToHit(1);
+        PopUpTween();
         ScoreTextTMP.text = "100/" + _levelData.GetScore();
+    }
+
+    void PopUpTween()
+    {
+         ScoreTextTMP.GetComponent<Transform>().DOShakeScale(0.5f, 0.6f, 8, 0f, true);
     }
 }
