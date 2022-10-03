@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5760243402889721816
 Transform:
   m_ObjectHideFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: -10
+  _levelData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
 --- !u!61 &3110040397463424485
 BoxCollider2D:
   m_ObjectHideFlags: 0

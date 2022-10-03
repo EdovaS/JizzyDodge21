@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    
+    [SerializeField] private GameData _levelData;
+
     // what is an delegate ? 
     // A delegate is a variable that holds function instead of data.
     public delegate void OnDisableCallback(Enemy instance); // ? This is a delegate
@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(_speed * Time.deltaTime, 0,0);
+        transform.Translate(_levelData.GetEnemySpeed() * Time.deltaTime, 0,0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

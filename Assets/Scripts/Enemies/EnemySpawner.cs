@@ -6,8 +6,9 @@ using Random = UnityEngine.Random;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] _Enemies;
-
-    [SerializeField] private float _timeBetweenSpawn;
+    
+    [SerializeField] private GameData _levelData;
+    
     private float _time;
 
     private ObjectPool<Enemy> _pool;
@@ -22,7 +23,7 @@ public class EnemySpawner : MonoBehaviour
     {
         _time += Time.deltaTime;
 
-        if (_time > _timeBetweenSpawn)
+        if (_time > _levelData.GetTimeBetweenSpawn())
         {
             _pool.Get();
             _time = 0;
