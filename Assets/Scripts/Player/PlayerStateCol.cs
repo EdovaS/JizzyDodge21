@@ -6,6 +6,9 @@ public class PlayerStateCol : MonoBehaviour
     private readonly string _stateOne = "StateOne";
     private readonly string _stateSecond = "StateSecond";
 
+    [SerializeField] private Shake _shakeScript;
+    
+
     [SerializeField] private GameObject _BlueParticleEffect;
     [SerializeField] private GameObject _RedParticleEffect;
 
@@ -19,7 +22,11 @@ public class PlayerStateCol : MonoBehaviour
             if (other.CompareTag("EnemyOne") || other.CompareTag("EnemySecond"))
             {
                 print("Lost a health or Game Over");
-                // Implement Lives 3
+                transform.parent.gameObject.SetActive(false);
+                
+                // Screen Shake
+                // Player Explode particle
+                // Trigger game over animations - maybe using Event or lets see
             }
         }
         
@@ -28,6 +35,7 @@ public class PlayerStateCol : MonoBehaviour
             if (other.CompareTag("EnemyOne"))
             {
                 _animator.SetTrigger("Attack");
+                _shakeScript.CamShake();
 
                 // Play the particles
                 _BlueParticleEffect.GetComponent<ParticleSystem>().Play();
@@ -46,6 +54,7 @@ public class PlayerStateCol : MonoBehaviour
             if (other.CompareTag("EnemySecond"))
             {
                 _animator.SetTrigger("Attack");
+                _shakeScript.CamShake();
                 
                 // Play the Particle System
                 _RedParticleEffect.GetComponent<ParticleSystem>().Play();

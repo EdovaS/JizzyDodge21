@@ -26,6 +26,6 @@ public class Score : MonoBehaviour
 
     void PopUpTween()
     {
-         ScoreTextTMP.GetComponent<Transform>().DOShakeScale(0.5f, 0.6f, 8, 0f, true);
+         ScoreTextTMP.GetComponent<Transform>().DOShakeScale(0.3f, 0.6f, 8, 0f, true);
     }
 }
