@@ -15,6 +15,7 @@ public class PlayerStateCol : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     [Header("Events")] public GameEvent onScoreIncreased;
+    public GameEvent onGameOver;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (gameObject.name == _defaultState)
@@ -23,6 +24,8 @@ public class PlayerStateCol : MonoBehaviour
             {
                 print("Lost a health or Game Over");
                 transform.parent.gameObject.SetActive(false);
+                
+                onGameOver.Raise();
                 
                 // Screen Shake
                 // Player Explode particle

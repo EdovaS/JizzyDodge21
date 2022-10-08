@@ -10250,7 +10250,8 @@ MonoBehaviour:
   _BlueParticleEffect: {fileID: 0}
   _RedParticleEffect: {fileID: 0}
   _animator: {fileID: 0}
-  onScoreIncreased: {fileID: 0}
+  onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
+  onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
 --- !u!61 &499857253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10362,6 +10363,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 547574774}
+  - component: {fileID: 547574776}
+  - component: {fileID: 547574775}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10384,6 +10387,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547574775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547574773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c7996b86ddad343bb139c58275b8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 547574776}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &547574776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547574773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6663f119ce6013b4fac3f0125ebbd5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameOverUI: {fileID: 1638598583}
 --- !u!21 &560283993
 Material:
   serializedVersion: 8
@@ -11290,6 +11334,7 @@ GameObject:
   - component: {fileID: 884066314}
   - component: {fileID: 884066313}
   - component: {fileID: 884066312}
+  - component: {fileID: 884066315}
   m_Layer: 5
   m_Name: Button_Try_Again
   m_TagString: Untagged
@@ -11360,7 +11405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 884066313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 884066315}
+        m_TargetAssemblyTypeName: LevelRestart, Assembly-CSharp
+        m_MethodName: RestartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &884066313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11399,6 +11456,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884066310}
   m_CullTransparentMesh: 1
+--- !u!114 &884066315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884066310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40c01efdea7f1a44aa3e4efcd885e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &904289797
 GameObject:
   m_ObjectHideFlags: 0
@@ -12347,6 +12416,7 @@ MonoBehaviour:
   _RedParticleEffect: {fileID: 192145029}
   _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
+  onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
 --- !u!61 &1337287370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17794,7 +17864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1638598584
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23603,6 +23673,7 @@ MonoBehaviour:
   _RedParticleEffect: {fileID: 192145029}
   _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
+  onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
 --- !u!61 &2125680567
 BoxCollider2D:
   m_ObjectHideFlags: 0
