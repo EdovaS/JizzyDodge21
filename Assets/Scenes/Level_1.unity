@@ -10251,8 +10251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shakeScript: {fileID: 616216942}
-  _BlueParticleEffect: {fileID: 0}
-  _RedParticleEffect: {fileID: 0}
+  _xEnemyParticleEffect: {fileID: 0}
+  _yEnemyParticleEffect: {fileID: 0}
   _animator: {fileID: 0}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
   onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
@@ -10754,6 +10754,10 @@ PrefabInstance:
     - target: {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
       propertyPath: m_Name
       value: Red_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5760243402889721816, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
       propertyPath: m_RootOrder
@@ -12416,8 +12420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shakeScript: {fileID: 616216942}
-  _BlueParticleEffect: {fileID: 1090059627}
-  _RedParticleEffect: {fileID: 192145029}
+  _xEnemyParticleEffect: {fileID: 1090059627}
+  _yEnemyParticleEffect: {fileID: 192145029}
   _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
   onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
@@ -12501,6 +12505,10 @@ PrefabInstance:
     - target: {fileID: 7201907753623609033, guid: 00703908210c369418de8ed8b768dbdc, type: 3}
       propertyPath: m_Name
       value: Blue_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201907753623609033, guid: 00703908210c369418de8ed8b768dbdc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00703908210c369418de8ed8b768dbdc, type: 3}
@@ -12619,8 +12627,8 @@ MonoBehaviour:
   faceBg: {fileID: 425539171}
   Body: {fileID: 1567189643}
   defaultPlayerForm: {fileID: 11400000, guid: 82854a01fcc34e34a9b6b201baa4cecd, type: 2}
-  bluePlayerForm: {fileID: 11400000, guid: 0a5d702b5b2ac494d9327891eabd46f9, type: 2}
-  redPlayerForm: {fileID: 11400000, guid: ace0c409f3acbc348b0228c92913adc5, type: 2}
+  xPlayerForm: {fileID: 11400000, guid: 0a5d702b5b2ac494d9327891eabd46f9, type: 2}
+  yPlayerForm: {fileID: 11400000, guid: ace0c409f3acbc348b0228c92913adc5, type: 2}
   _stateOneCollider: {fileID: 2125680564}
   _stateSecondCollider: {fileID: 1337287367}
 --- !u!95 &1414674514
@@ -17926,7 +17934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1695909763
 Transform:
   m_ObjectHideFlags: 0
@@ -23677,8 +23685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shakeScript: {fileID: 616216942}
-  _BlueParticleEffect: {fileID: 1090059627}
-  _RedParticleEffect: {fileID: 192145029}
+  _xEnemyParticleEffect: {fileID: 1090059627}
+  _yEnemyParticleEffect: {fileID: 192145029}
   _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
   onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}

@@ -1,6 +1,7 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class Score : MonoBehaviour
     private void Start()
     {
         _levelData.SetScore(0);
-        ScoreTextTMP.text = "100/" + _levelData.GetScore();
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+            ScoreTextTMP.text = "25/" + _levelData.GetScore();
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+            ScoreTextTMP.text = "50/" + _levelData.GetScore();
     }
 
     public void IncreaseScore()

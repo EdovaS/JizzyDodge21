@@ -23,14 +23,13 @@ public class PlayerStateCol : MonoBehaviour
         {
             if (other.CompareTag("EnemyOne") || other.CompareTag("EnemySecond"))
             {
-                print("Lost a health or Game Over");
+                // Player Die
                 transform.parent.gameObject.SetActive(false);
-                
+
                 onGameOver.Raise();
                 
                 // Screen Shake
                 // Player Explode particle
-                // Trigger game over animations - maybe using Event or lets see
             }
         }
         
@@ -45,6 +44,9 @@ public class PlayerStateCol : MonoBehaviour
                 _xEnemyParticleEffect.SetActive(true);
                 _xEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
                 
+                // Enemy Die Sound
+                SoundManager.PlaySound(SoundManager.Sound.EnemyDie);
+
                 // Event call send
                 onScoreIncreased.Raise();
 
@@ -64,6 +66,9 @@ public class PlayerStateCol : MonoBehaviour
                 // Play the Particle System
                 _yEnemyParticleEffect.SetActive(true);
                 _yEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
+                
+                // Enemy Die Sound
+                SoundManager.PlaySound(SoundManager.Sound.EnemyDie);
                 
                 // Event call send
                 onScoreIncreased.Raise();
