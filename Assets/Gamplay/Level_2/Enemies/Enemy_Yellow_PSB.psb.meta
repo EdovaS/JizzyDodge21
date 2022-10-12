@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bfb14472e33a2e849aa4d1c8abb2319d
+guid: 1ef0e70928f241746a29eb0290c46be2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -90,7 +90,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData:
-  - name: BlueEnemy
+  - name: 
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -99,9 +99,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 365
-      height: 338
-    spriteID: 3ef17ad60ee9b4b448baadc9c6018d47
+      width: 370
+      height: 341
+    spriteID: 596e1752725d45946b5f8a5688ba6a12
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -110,9 +110,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -153, y: -108}
+    uvTransform: {x: -150, y: -108}
   rigSpriteImportData:
-  - name: BlueEnemy
+  - name: 
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -121,9 +121,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 365
-      height: 338
-    spriteID: c94356c3de6de5f4fa38e1afb8ec00fa
+      width: 370
+      height: 341
+    spriteID: ae7751933d01499469855b3c5336b478
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -132,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -153, y: -108}
+    uvTransform: {x: -150, y: -108}
   characterData:
     bones: []
     parts: []
@@ -155,7 +155,7 @@ ScriptedImporter:
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Standalone
@@ -217,23 +217,23 @@ ScriptedImporter:
   spritePackingTag: 
   resliceFromLayer: 0
   mosaicPSDLayers:
-  - name: BlueEnemy
-    spriteName: BlueEnemy
+  - name: 
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 3ef17ad60ee9b4b448baadc9c6018d47
-    layerID: 40
+    spriteID: 596e1752725d45946b5f8a5688ba6a12
+    layerID: 51
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
   rigPSDLayers:
-  - name: BlueEnemy
-    spriteName: BlueEnemy
+  - name: 
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: c94356c3de6de5f4fa38e1afb8ec00fa
-    layerID: 40
+    spriteID: ae7751933d01499469855b3c5336b478
+    layerID: 51
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1

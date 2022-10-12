@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerFormChange : MonoBehaviour
 {
@@ -30,8 +31,8 @@ public class PlayerFormChange : MonoBehaviour
     #region Scriptable_Objects_References------Player_Forms
     
     [SerializeField] private PlayerForm defaultPlayerForm;
-    [SerializeField] private PlayerForm bluePlayerForm;
-    [SerializeField] private PlayerForm redPlayerForm;
+    [FormerlySerializedAs("bluePlayerForm")] [SerializeField] private PlayerForm xPlayerForm;
+    [FormerlySerializedAs("redPlayerForm")] [SerializeField] private PlayerForm yPlayerForm;
 
     #endregion
 
@@ -89,14 +90,14 @@ public class PlayerFormChange : MonoBehaviour
         
         if (Input.GetKey(KeyCode.A))
         {
-            _playerForm = bluePlayerForm;
+            _playerForm = xPlayerForm;
             _stateOneCollider.SetActive(true);
             _stateSecondCollider.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            _playerForm = redPlayerForm;
+            _playerForm = yPlayerForm;
             _stateOneCollider.SetActive(false);
             _stateSecondCollider.SetActive(true);
         }

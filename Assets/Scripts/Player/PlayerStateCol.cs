@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerStateCol : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class PlayerStateCol : MonoBehaviour
     [SerializeField] private Shake _shakeScript;
     
 
-    [SerializeField] private GameObject _BlueParticleEffect;
-    [SerializeField] private GameObject _RedParticleEffect;
+    [FormerlySerializedAs("_BlueParticleEffect")] [SerializeField] private GameObject _xEnemyParticleEffect;
+    [FormerlySerializedAs("_RedParticleEffect")] [SerializeField] private GameObject _yEnemyParticleEffect;
 
     [SerializeField] private Animator _animator;
 
@@ -41,7 +42,8 @@ public class PlayerStateCol : MonoBehaviour
                 _shakeScript.CamShake();
 
                 // Play the particles
-                _BlueParticleEffect.GetComponent<ParticleSystem>().Play();
+                _xEnemyParticleEffect.SetActive(true);
+                _xEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
                 
                 // Event call send
                 onScoreIncreased.Raise();
@@ -60,7 +62,8 @@ public class PlayerStateCol : MonoBehaviour
                 _shakeScript.CamShake();
                 
                 // Play the Particle System
-                _RedParticleEffect.GetComponent<ParticleSystem>().Play();
+                _yEnemyParticleEffect.SetActive(true);
+                _yEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
                 
                 // Event call send
                 onScoreIncreased.Raise();
