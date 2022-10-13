@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd40bdedf3c0ba040a3f6acbd2c534db, type: 3}
-  m_Name: Level_1
+  m_Name: Level_3
   m_EditorClassIdentifier: 
-  _score: 26
-  _enemySpeed: -15
-  _timeBetweenSpawn: 0.89999986
+  _score: 22
+  _enemySpeed: -17
+  _timeBetweenSpawn: 0.8
   MinimumTimeBetweenSpawn: 0.5
-  MaxEnemySpeed: -30
+  MaxEnemySpeed: -20
   StartingEnemySpeed: -15
-  StartingTimeBetweenSpawn: 1.5
-  MaxScore: 25
+  StartingTimeBetweenSpawn: 1.2
+  MaxScore: 50
   EnemySpeedIncrement: -1
-  TimeBetweenSpawnDecrement: 0.1
-  EveryHit: 3
+  TimeBetweenSpawnDecrement: 0.2
+  EveryHit: 8

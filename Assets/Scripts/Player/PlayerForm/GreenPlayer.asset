@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7256225110b9afc48801d2e70d7bf52e, type: 3}
+  m_Name: GreenPlayer
+  m_EditorClassIdentifier: 
+  LeftHand: {fileID: 596681315753594517, guid: 39fbe3f817f596a498ba92a1ff84d472, type: 3}
+  RightHand: {fileID: -6484894199870345426, guid: 39fbe3f817f596a498ba92a1ff84d472, type: 3}
+  LeftEye: {fileID: -6120465094564908221, guid: 39fbe3f817f596a498ba92a1ff84d472, type: 3}
+  RightEye: {fileID: -4601333527663530573, guid: 39fbe3f817f596a498ba92a1ff84d472, type: 3}
+  FaceBg: {fileID: -2102541481218756312, guid: 39fbe3f817f596a498ba92a1ff84d472, type: 3}
+  Body: {fileID: -1370756436248285710, guid: 39fbe3f817f596a498ba92a1ff84d472, type: 3}

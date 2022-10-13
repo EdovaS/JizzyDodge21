@@ -1,0 +1,599 @@
+fileFormatVersion: 2
+guid: fa7ab20338f430e4a8206b40d803974f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Ground
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 707
+      y: 3475
+      width: 3189
+      height: 20
+    spriteID: d5553087b00e2e348ab7e706d380b6bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 406, y: 3058}
+  - name: SmallBush
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3729
+      y: 2601
+      width: 149
+      height: 127
+    spriteID: 060dbec500256a84f8b66eeb8c62b658
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 833, y: 2178}
+  - name: Plant1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3368
+      y: 2826
+      width: 166
+      height: 260
+    spriteID: 4f3d7668e9a3fbe4492e8d1cf1fdcee4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1755, y: 2391}
+  - name: Plant2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3854
+      y: 2175
+      width: 203
+      height: 320
+    spriteID: 818c9d2a59f44b14eaa5eee18aec5045
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1357, y: 1748}
+  - name: BigBush
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3368
+      y: 2601
+      width: 353
+      height: 217
+    spriteID: b27c6b4f79ec54a44b813536b18a67b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1530, y: 2178}
+  - name: SmallRedTree
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3049
+      y: 2601
+      width: 311
+      height: 824
+    spriteID: 2f6c41c5b95df90439bdf6cc76d8b8fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -174, y: 2173}
+  - name: BigRedTree
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4783
+      width: 480
+      height: 1319
+    spriteID: 42dca410bd32d4e4cb020a92d0bda4f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2114, y: 4366}
+  - name: SmallGreenTree
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2577
+      y: 2601
+      width: 464
+      height: 852
+    spriteID: bd11af7061d1643479f440b9c23bba42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2345, y: 2173}
+  - name: BigGreenTree
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3475
+      width: 695
+      height: 1300
+    spriteID: e1ec72fcdeedee84ab293256dac1a55d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1186, y: 3047}
+  - name: BgWhite
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2601
+      width: 1607
+      height: 866
+    spriteID: c4201de7eb6d107459786ade3bdf167a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1207, y: 2164}
+  - name: WatteryGround
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2175
+      width: 3842
+      height: 418
+    spriteID: c254d22c52ef9774a9eeea60641b45be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 2175}
+  - name: Sun
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1619
+      y: 2601
+      width: 950
+      height: 846
+    spriteID: 1a3b3377716b24547b84f60eef30acca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 108, y: 1721}
+  - name: BackGround
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3846
+      height: 2163
+    spriteID: 6c264e5fee66a5f44aa5e9aa4bb66198
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: New
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d276805af5fec084eb1d516138e2ddae
+    layerID: 83
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Ground
+    spriteName: Ground
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d5553087b00e2e348ab7e706d380b6bb
+    layerID: 243
+    mosaicPosition: {x: 707, y: 3475}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SmallBush
+    spriteName: SmallBush
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 060dbec500256a84f8b66eeb8c62b658
+    layerID: 96
+    mosaicPosition: {x: 3729, y: 2601}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Plant1
+    spriteName: Plant1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4f3d7668e9a3fbe4492e8d1cf1fdcee4
+    layerID: 99
+    mosaicPosition: {x: 3368, y: 2826}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Plant2
+    spriteName: Plant2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 818c9d2a59f44b14eaa5eee18aec5045
+    layerID: 147
+    mosaicPosition: {x: 3854, y: 2175}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BigBush
+    spriteName: BigBush
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b27c6b4f79ec54a44b813536b18a67b1
+    layerID: 195
+    mosaicPosition: {x: 3368, y: 2601}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SmallRedTree
+    spriteName: SmallRedTree
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2f6c41c5b95df90439bdf6cc76d8b8fd
+    layerID: 202
+    mosaicPosition: {x: 3049, y: 2601}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BigRedTree
+    spriteName: BigRedTree
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 42dca410bd32d4e4cb020a92d0bda4f4
+    layerID: 244
+    mosaicPosition: {x: 4, y: 4783}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SmallGreenTree
+    spriteName: SmallGreenTree
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bd11af7061d1643479f440b9c23bba42
+    layerID: 220
+    mosaicPosition: {x: 2577, y: 2601}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BigGreenTree
+    spriteName: BigGreenTree
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e1ec72fcdeedee84ab293256dac1a55d
+    layerID: 252
+    mosaicPosition: {x: 4, y: 3475}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BgWhite
+    spriteName: BgWhite
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c4201de7eb6d107459786ade3bdf167a
+    layerID: 238
+    mosaicPosition: {x: 4, y: 2601}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WatteryGround
+    spriteName: WatteryGround
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c254d22c52ef9774a9eeea60641b45be
+    layerID: 239
+    mosaicPosition: {x: 4, y: 2175}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sun
+    spriteName: Sun
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1a3b3377716b24547b84f60eef30acca
+    layerID: 240
+    mosaicPosition: {x: 1619, y: 2601}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BackGround
+    spriteName: BackGround
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6c264e5fee66a5f44aa5e9aa4bb66198
+    layerID: 241
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
