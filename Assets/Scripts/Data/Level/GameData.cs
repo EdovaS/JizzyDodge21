@@ -7,9 +7,13 @@ public class GameData : ScriptableObject
     [Header("Default Values", order = 0)]
     // ? Main Variables
     [SerializeField] private float _score;
+    public float MaxScore;
     [SerializeField] private float _enemySpeed = -10;
     [SerializeField] private float _timeBetweenSpawn = 1.5f;
+    
+    [Header("Minimum Values", order = 1)]
     [SerializeField] public float MinimumTimeBetweenSpawn = 0.3f;
+    [SerializeField] public float MaxEnemySpeed;
     
     private float _hit;
     
@@ -44,10 +48,10 @@ public class GameData : ScriptableObject
 
     #endregion
 
-    [Header("Difficulty Values", order = 1)]
+    [Header("Difficulty Values", order = 2)]
     public float EnemySpeedIncrement;
     public float TimeBetweenSpawnDecrement;
 
-    [Header("Every X Hit", order = 2)] public int EveryHit;
+    [Header("Every X Hit Difficulty Increases", order = 2)] public int EveryHit;
 
 }

@@ -69,7 +69,7 @@ public class PlayerStateCol : MonoBehaviour
                 
                 // Enemy Die Sound
                 SoundManager.PlaySound(SoundManager.Sound.EnemyDie);
-                
+
                 // Event call send
                 onScoreIncreased.Raise();
                 

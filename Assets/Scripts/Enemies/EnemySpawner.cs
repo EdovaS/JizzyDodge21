@@ -1,17 +1,28 @@
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Pool;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] _Enemies;
     
-    [SerializeField] private GameData _levelData;
+    private GameData _levelData;
     
     private float _time;
 
     private ObjectPool<Enemy> _pool;
+
+    private void Awake()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1) _levelData = GameAssets.i.Level_1_Data;
+        if (SceneManager.GetActiveScene().buildIndex == 2) _levelData = GameAssets.i.Level_2_Data;
+        if (SceneManager.GetActiveScene().buildIndex == 3) _levelData = GameAssets.i.Level_3_Data;
+        if (SceneManager.GetActiveScene().buildIndex == 4) _levelData = GameAssets.i.Level_4_Data;
+        if (SceneManager.GetActiveScene().buildIndex == 5) _levelData = GameAssets.i.Level_5_Data;
+    }
 
     private void Start()
     {

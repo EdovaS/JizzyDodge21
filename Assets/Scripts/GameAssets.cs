@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class GameAssets : MonoBehaviour
@@ -12,6 +13,15 @@ public class GameAssets : MonoBehaviour
         }
     }
 
+    [Header("Level Data Reference", order = 0)] [NotNull]
+    public GameData Level_1_Data;
+    public GameData Level_2_Data;
+    public GameData Level_3_Data;
+    public GameData Level_4_Data;
+    public GameData Level_5_Data;
+    
+    
+    [Header("Audio Data", order = 1)]
     public SoundAudioClip[] SoundAudioClipsArray;
     
     [System.Serializable]

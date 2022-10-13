@@ -15179,6 +15179,7 @@ GameObject:
   - component: {fileID: 547574774}
   - component: {fileID: 547574776}
   - component: {fileID: 547574775}
+  - component: {fileID: 547574777}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -15241,7 +15242,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6663f119ce6013b4fac3f0125ebbd5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameData: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
   _gameOverUI: {fileID: 1638598583}
+--- !u!114 &547574777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547574773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c7996b86ddad343bb139c58275b8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: IncrementScoreReferenceVar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!21 &560283993
 Material:
   serializedVersion: 8
@@ -15553,7 +15583,7 @@ MonoBehaviour:
   _Enemies:
   - {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
   - {fileID: 4255590884536860739}
-  _levelData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
+  _levelData: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
 --- !u!1001 &606014976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15561,6 +15591,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1695909763}
     m_Modifications:
+    - target: {fileID: 910061239123191669, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
+      propertyPath: _levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
     - target: {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
       propertyPath: m_Name
       value: Red_Enemy
@@ -17321,6 +17355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1695909763}
     m_Modifications:
+    - target: {fileID: 5370139091816925549, guid: 00703908210c369418de8ed8b768dbdc, type: 3}
+      propertyPath: _levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
     - target: {fileID: 5370139091816925586, guid: 00703908210c369418de8ed8b768dbdc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -22472,7 +22510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreTextTMP: {fileID: 1446540704}
-  _levelData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
+  _levelData: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
 --- !u!1 &1446540702
 GameObject:
   m_ObjectHideFlags: 0
@@ -28068,7 +28106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a9599be853dfb48b11400762d9c383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
+  _gameData: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
 --- !u!4 &2008248446
 Transform:
   m_ObjectHideFlags: 0
@@ -31370,5 +31408,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7886633222197923823, guid: 23b1a46f3038d6040890b5c1e940c0e7, type: 3}
+      propertyPath: _levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23b1a46f3038d6040890b5c1e940c0e7, type: 3}

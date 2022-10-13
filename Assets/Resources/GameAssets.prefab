@@ -44,6 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca396e531d94c52b545b525b1ed32bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Level_1_Data: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
+  Level_2_Data: {fileID: 11400000, guid: bac5806c173843d4a98221c124cef976, type: 2}
+  Level_3_Data: {fileID: 0}
+  Level_4_Data: {fileID: 0}
+  Level_5_Data: {fileID: 0}
   SoundAudioClipsArray:
   - Sound: 1
     AudioClip: {fileID: 8300000, guid: 64b28832e7c4dcc45bd32162cc6b6e62, type: 3}
