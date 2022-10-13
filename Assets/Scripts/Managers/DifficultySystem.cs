@@ -19,8 +19,8 @@ public class DifficultySystem : MonoBehaviour
 
     private void Start()
     {
-        _levelData.SetEnemySpeed(-10);
-        _levelData.SetTimeBetweenSpawn(1.5f);
+        _levelData.SetEnemySpeed(_levelData.StartingEnemySpeed);
+        _levelData.SetTimeBetweenSpawn(_levelData.StartingTimeBetweenSpawn);
         _levelData.SetHit(0);
     }
 

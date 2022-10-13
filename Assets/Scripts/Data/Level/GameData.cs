@@ -4,18 +4,28 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(fileName = "LevelData", menuName = "ScriptableObjects/LevelData", order = 2)]
 public class GameData : ScriptableObject
 {
-    [Header("Default Values", order = 0)]
+    [Header("Readonly Variables", order = 0)]
     // ? Main Variables
     [SerializeField] private float _score;
-    public float MaxScore;
     [SerializeField] private float _enemySpeed = -10;
     [SerializeField] private float _timeBetweenSpawn = 1.5f;
     
     [Header("Minimum Values", order = 1)]
     [SerializeField] public float MinimumTimeBetweenSpawn = 0.3f;
     [SerializeField] public float MaxEnemySpeed;
+
+    [Header("Starting Values", order = 2)] 
+    public float StartingEnemySpeed;
+    public float StartingTimeBetweenSpawn;
+    public float MaxScore;
     
     private float _hit;
+    
+    [Header("Difficulty Values", order = 3)]
+    public float EnemySpeedIncrement;
+    public float TimeBetweenSpawnDecrement;
+
+    [Header("Every X Hit Difficulty Increases", order = 2)] public int EveryHit;
     
 
     // ? Set value Functions
@@ -47,11 +57,5 @@ public class GameData : ScriptableObject
     public float GetHit() { return _hit; }
 
     #endregion
-
-    [Header("Difficulty Values", order = 2)]
-    public float EnemySpeedIncrement;
-    public float TimeBetweenSpawnDecrement;
-
-    [Header("Every X Hit Difficulty Increases", order = 2)] public int EveryHit;
 
 }

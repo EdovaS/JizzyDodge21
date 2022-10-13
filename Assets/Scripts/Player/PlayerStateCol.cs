@@ -45,7 +45,7 @@ public class PlayerStateCol : MonoBehaviour
                 _xEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
                 
                 // Enemy Die Sound
-                SoundManager.PlaySound(SoundManager.Sound.EnemyDie);
+                EnemyDieSound();
 
                 // Event call send
                 onScoreIncreased.Raise();
@@ -68,7 +68,7 @@ public class PlayerStateCol : MonoBehaviour
                 _yEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
                 
                 // Enemy Die Sound
-                SoundManager.PlaySound(SoundManager.Sound.EnemyDie);
+                SoundManager.PlaySound(SoundManager.Sound.EnemyDie1);
 
                 // Event call send
                 onScoreIncreased.Raise();
@@ -78,6 +78,24 @@ public class PlayerStateCol : MonoBehaviour
                 
                 
             }
+        }
+    }
+
+    private static void EnemyDieSound()
+    {
+        int randomVal = Random.Range(1, 3);
+
+        switch (randomVal)
+        {
+            case 1:
+                SoundManager.PlaySound(SoundManager.Sound.EnemyDie1);
+                break;
+            case 2:
+                SoundManager.PlaySound(SoundManager.Sound.EnemyDie2);
+                break;
+            case 3:
+                SoundManager.PlaySound(SoundManager.Sound.EnemyDie3);
+                break;
         }
     }
 }

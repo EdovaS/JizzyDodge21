@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd40bdedf3c0ba040a3f6acbd2c534db, type: 3}
   m_Name: Level_2
   m_EditorClassIdentifier: 
-  _score: 3
-  MaxScore: 50
+  _score: 0
   _enemySpeed: -10
-  _timeBetweenSpawn: 1.4
+  _timeBetweenSpawn: 1.5
   MinimumTimeBetweenSpawn: 0.3
-  MaxEnemySpeed: -20
-  EnemySpeedIncrement: -20
-  TimeBetweenSpawnDecrement: 0.1
-  EveryHit: 1
+  MaxEnemySpeed: -15
+  StartingEnemySpeed: 0
+  StartingTimeBetweenSpawn: 0
+  MaxScore: 50
+  EnemySpeedIncrement: -2
+  TimeBetweenSpawnDecrement: 0.2
+  EveryHit: 8

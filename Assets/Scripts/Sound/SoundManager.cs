@@ -5,7 +5,9 @@ public static class SoundManager
     public enum Sound
     {
         PlayerDie,
-        EnemyDie
+        EnemyDie1,
+        EnemyDie2,
+        EnemyDie3
     }
     
     

@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
    {
       // ? Trigger The UI Animation of Won;
       // LoadNextLevel()
-      // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
    
    

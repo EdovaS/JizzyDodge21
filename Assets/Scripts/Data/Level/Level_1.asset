@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Level_1
   m_EditorClassIdentifier: 
   _score: 0
-  MaxScore: 25
   _enemySpeed: -10
   _timeBetweenSpawn: 1.5
   MinimumTimeBetweenSpawn: 0.3
-  MaxEnemySpeed: -20
+  MaxEnemySpeed: -15
+  StartingEnemySpeed: -10
+  StartingTimeBetweenSpawn: 1.5
+  MaxScore: 25
   EnemySpeedIncrement: -1.5
   TimeBetweenSpawnDecrement: 0.2
   EveryHit: 10

@@ -10432,7 +10432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6663f119ce6013b4fac3f0125ebbd5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
   _gameOverUI: {fileID: 1638598583}
 --- !u!114 &547574777
 MonoBehaviour:
@@ -10773,7 +10772,6 @@ MonoBehaviour:
   _Enemies:
   - {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
   - {fileID: 7201907753623609033, guid: 00703908210c369418de8ed8b768dbdc, type: 3}
-  _levelData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
 --- !u!1001 &606014976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17639,7 +17637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreTextTMP: {fileID: 1446540704}
-  _levelData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
 --- !u!1 &1446540702
 GameObject:
   m_ObjectHideFlags: 0
@@ -17698,7 +17695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100/0
+  m_text: 25/0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef305b066b1325847a518c420356f2be, type: 2}
   m_sharedMaterial: {fileID: -183827912248910436, guid: ef305b066b1325847a518c420356f2be, type: 2}
@@ -23231,7 +23228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a9599be853dfb48b11400762d9c383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameData: {fileID: 11400000, guid: 482857d7d23b460498328bcf03fca0ae, type: 2}
 --- !u!4 &2008248446
 Transform:
   m_ObjectHideFlags: 0
