@@ -67,7 +67,7 @@ public class PlayerFormChange : MonoBehaviour
     private void Update()
     {
         ChangingSpritesWithScriptableGameObjects();
-        PlayerInput();
+        // PlayerInput();
     }
 
     private void ChangingSpritesWithScriptableGameObjects()
@@ -79,29 +79,43 @@ public class PlayerFormChange : MonoBehaviour
         _faceBgSpriteRenderer.sprite = _playerForm.FaceBg;
         _bodySpriteRenderer.sprite = _playerForm.Body;
     }
-    private void PlayerInput()
+    /*private void PlayerInput()
     {
         if (!Input.GetKey(KeyCode.A) || !Input.GetKey(KeyCode.D))
         {
-            _playerForm = defaultPlayerForm;
-            _stateOneCollider.SetActive(false);
-            _stateSecondCollider.SetActive(false);
+            DefaultState();
         }
         
         if (Input.GetKey(KeyCode.A))
         {
-            _playerForm = xPlayerForm;
-            _stateOneCollider.SetActive(true);
-            _stateSecondCollider.SetActive(false);
+            SetXState();
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            _playerForm = yPlayerForm;
-            _stateOneCollider.SetActive(false);
-            _stateSecondCollider.SetActive(true);
+            SetYState();
         }
         
+    }*/
+
+    public void SetYState()
+    {
+        _playerForm = yPlayerForm;
+        _stateOneCollider.SetActive(false);
+        _stateSecondCollider.SetActive(true);
     }
-    
+
+    public void SetXState()
+    {
+        _playerForm = xPlayerForm;
+        _stateOneCollider.SetActive(true);
+        _stateSecondCollider.SetActive(false);
+    }
+
+    public void DefaultState()
+    {
+        _playerForm = defaultPlayerForm;
+        _stateOneCollider.SetActive(false);
+        _stateSecondCollider.SetActive(false);
+    }
 }
