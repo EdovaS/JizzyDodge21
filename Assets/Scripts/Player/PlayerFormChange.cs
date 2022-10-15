@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.InputSystem;
 
 public class PlayerFormChange : MonoBehaviour
 {
@@ -48,7 +49,9 @@ public class PlayerFormChange : MonoBehaviour
 
     private void Start()
     {
-        DefaultState(); // Call this once at start.
+        _playerForm = defaultPlayerForm;
+        _stateOneCollider.SetActive(false);
+        _stateSecondCollider.SetActive(false); // Call this once at start.
         
         // default reference of player scriptable object
         _playerForm = defaultPlayerForm; 
@@ -69,7 +72,7 @@ public class PlayerFormChange : MonoBehaviour
     private void Update()
     {
         ChangingSpritesWithScriptableGameObjects();
-        // PlayerInput();
+        DefaultState();
     }
 
     private void ChangingSpritesWithScriptableGameObjects()
@@ -81,43 +84,50 @@ public class PlayerFormChange : MonoBehaviour
         _faceBgSpriteRenderer.sprite = _playerForm.FaceBg;
         _bodySpriteRenderer.sprite = _playerForm.Body;
     }
-    /*private void PlayerInput()
+
+    private bool _buttonXPressed;
+    private bool _buttonYPressed;
+    
+    public void SetYState(InputAction.CallbackContext context)
     {
-        if (!Input.GetKey(KeyCode.A) || !Input.GetKey(KeyCode.D))
+        if (context.performed)
         {
-            DefaultState();
+            _playerForm = yPlayerForm;
+            _stateOneCollider.SetActive(false);
+            _stateSecondCollider.SetActive(true);
+            _buttonYPressed = true;
+        }
+        else if (context.canceled)
+        {
+            _buttonYPressed = false;
         }
         
-        if (Input.GetKey(KeyCode.A))
-        {
-            SetXState();
-        }
 
-        if (Input.GetKey(KeyCode.D))
+    }
+
+    public void SetXState(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
-            SetYState();
+            _playerForm = xPlayerForm;
+            _stateOneCollider.SetActive(true);
+            _stateSecondCollider.SetActive(false);
+            _buttonXPressed = true;    
+        }
+        else if (context.canceled)
+        {
+            _buttonXPressed = false;
+        }
+    }
+
+    private void DefaultState()
+    {
+        if (!_buttonXPressed && !_buttonYPressed)
+        {
+            _playerForm = defaultPlayerForm;
+            _stateOneCollider.SetActive(false);
+            _stateSecondCollider.SetActive(false);    
         }
         
-    }*/
-
-    public void SetYState()
-    {
-        _playerForm = yPlayerForm;
-        _stateOneCollider.SetActive(false);
-        _stateSecondCollider.SetActive(true);
-    }
-
-    public void SetXState()
-    {
-        _playerForm = xPlayerForm;
-        _stateOneCollider.SetActive(true);
-        _stateSecondCollider.SetActive(false);
-    }
-
-    public void DefaultState()
-    {
-        _playerForm = defaultPlayerForm;
-        _stateOneCollider.SetActive(false);
-        _stateSecondCollider.SetActive(false);
     }
 }
