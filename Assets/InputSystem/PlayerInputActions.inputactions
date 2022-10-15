@@ -22,15 +22,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Start",
-                    "type": "Button",
-                    "id": "86b4122b-4e47-4494-b9bc-ff61896f6473",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -77,10 +68,27 @@
                     "action": "StateY",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "bd5f140d-67ea-4ede-ac6c-8ea4ea1d72af",
+            "actions": [
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "ced8793a-2fd1-42aa-b388-247f8da05453",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "a77b286b-1a10-439d-8369-f45159a0add3",
+                    "id": "8a027a0b-ae9a-4280-865d-d3acff171a58",
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",

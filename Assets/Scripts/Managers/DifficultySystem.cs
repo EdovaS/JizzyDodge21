@@ -22,6 +22,8 @@ public class DifficultySystem : MonoBehaviour
         _levelData.SetEnemySpeed(_levelData.StartingEnemySpeed);
         _levelData.SetTimeBetweenSpawn(_levelData.StartingTimeBetweenSpawn);
         _levelData.SetHit(0);
+        
+        if (_levelData == null) Debug.LogError("You Haven't assigned a LevelData Scriptable object for the level");
     }
 
     private void Update()
