@@ -48,6 +48,8 @@ public class PlayerFormChange : MonoBehaviour
 
     private void Start()
     {
+        DefaultState(); // Call this once at start.
+        
         // default reference of player scriptable object
         _playerForm = defaultPlayerForm; 
         
