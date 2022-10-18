@@ -19,12 +19,7 @@ public class GameManager : MonoBehaviour
       if (SceneManager.GetActiveScene().buildIndex == 4) _levelData = GameAssets.i.Level_4_Data;
       if (SceneManager.GetActiveScene().buildIndex == 5) _levelData = GameAssets.i.Level_5_Data;
    }
-
-   private void Start()
-   {
-      Application.targetFrameRate = 60;
-   }
-
+   
    public void GameOver()
    {
       _gameOverUI.SetActive(true);

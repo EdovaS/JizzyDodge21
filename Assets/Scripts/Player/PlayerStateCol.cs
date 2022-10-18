@@ -83,7 +83,7 @@ public class PlayerStateCol : MonoBehaviour
 
     private static void EnemyDieSound()
     {
-        int randomVal = Random.Range(1, 3);
+        int randomVal = Random.Range(1, 4);
 
         switch (randomVal)
         {
