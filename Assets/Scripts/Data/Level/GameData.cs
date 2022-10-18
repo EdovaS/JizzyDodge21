@@ -1,3 +1,4 @@
+using KevinCastejon.MoreAttributes;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -6,9 +7,9 @@ public class GameData : ScriptableObject
 {
     [Header("Readonly Variables", order = 0)]
     // ? Main Variables
-    [SerializeField] private float _score;
-    [SerializeField] private float _enemySpeed = -10;
-    [SerializeField] private float _timeBetweenSpawn = 1.5f;
+    [ReadOnly] [SerializeField] private float _score;
+    [ReadOnly] [SerializeField] private float _enemySpeed = -10;
+    [ReadOnly] [SerializeField] private float _timeBetweenSpawn = 1.5f;
     
     [Header("Minimum Values", order = 1)]
     [SerializeField] public float MinimumTimeBetweenSpawn = 0.3f;
@@ -18,10 +19,13 @@ public class GameData : ScriptableObject
     public float StartingEnemySpeed;
     public float StartingTimeBetweenSpawn;
     public float MaxScore;
+
+    [Header("Number of Enemies this level.", order = 3)] // Used at a max random value for enemy spawning;
+    public int MaxNumberOfEnemies; 
     
     private float _hit;
     
-    [Header("Difficulty Values", order = 3)]
+    [Header("Difficulty Values", order = 4)]
     public float EnemySpeedIncrement;
     public float TimeBetweenSpawnDecrement;
 

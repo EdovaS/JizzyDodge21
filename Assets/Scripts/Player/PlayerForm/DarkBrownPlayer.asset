@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7256225110b9afc48801d2e70d7bf52e, type: 3}
+  m_Name: DarkBrownPlayer
+  m_EditorClassIdentifier: 
+  LeftHand: {fileID: 3320453179007435932, guid: a07b9e6067ec08c419ece7020b495cae, type: 3}
+  RightHand: {fileID: 8267087168843031061, guid: a07b9e6067ec08c419ece7020b495cae, type: 3}
+  LeftEye: {fileID: -8298415393389969851, guid: a07b9e6067ec08c419ece7020b495cae, type: 3}
+  RightEye: {fileID: -2112034396920492902, guid: a07b9e6067ec08c419ece7020b495cae, type: 3}
+  FaceBg: {fileID: 6520643333154226999, guid: a07b9e6067ec08c419ece7020b495cae, type: 3}
+  Body: {fileID: -1625071828246700876, guid: a07b9e6067ec08c419ece7020b495cae, type: 3}

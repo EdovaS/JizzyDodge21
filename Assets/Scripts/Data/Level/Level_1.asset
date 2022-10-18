@@ -20,6 +20,7 @@ MonoBehaviour:
   StartingEnemySpeed: -15
   StartingTimeBetweenSpawn: 1.5
   MaxScore: 25
+  MaxNumberOfEnemies: 2
   EnemySpeedIncrement: -1
   TimeBetweenSpawnDecrement: 0.1
   EveryHit: 3

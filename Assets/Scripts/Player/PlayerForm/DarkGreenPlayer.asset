@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7256225110b9afc48801d2e70d7bf52e, type: 3}
+  m_Name: DarkGreenPlayer
+  m_EditorClassIdentifier: 
+  LeftHand: {fileID: 4007055138721586335, guid: 3c2d1e9ab7769c3429eb2ecfd98dbe82, type: 3}
+  RightHand: {fileID: -3908074635594177579, guid: 3c2d1e9ab7769c3429eb2ecfd98dbe82, type: 3}
+  LeftEye: {fileID: -9116768268149946756, guid: 3c2d1e9ab7769c3429eb2ecfd98dbe82, type: 3}
+  RightEye: {fileID: -6464722354625334831, guid: 3c2d1e9ab7769c3429eb2ecfd98dbe82, type: 3}
+  FaceBg: {fileID: -6082707539948702762, guid: 3c2d1e9ab7769c3429eb2ecfd98dbe82, type: 3}
+  Body: {fileID: 8906677414151959494, guid: 3c2d1e9ab7769c3429eb2ecfd98dbe82, type: 3}

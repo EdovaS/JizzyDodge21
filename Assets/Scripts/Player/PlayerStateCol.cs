@@ -12,6 +12,7 @@ public class PlayerStateCol : MonoBehaviour
 
     [FormerlySerializedAs("_BlueParticleEffect")] [SerializeField] private GameObject _xEnemyParticleEffect;
     [FormerlySerializedAs("_RedParticleEffect")] [SerializeField] private GameObject _yEnemyParticleEffect;
+    [SerializeField] private GameObject _zEnemyParticleEffect;
 
     [SerializeField] private Animator _animator;
 
@@ -68,7 +69,7 @@ public class PlayerStateCol : MonoBehaviour
                 _yEnemyParticleEffect.GetComponent<ParticleSystem>().Play();
                 
                 // Enemy Die Sound
-                SoundManager.PlaySound(SoundManager.Sound.EnemyDie1);
+                EnemyDieSound();
 
                 // Event call send
                 onScoreIncreased.Raise();
@@ -79,6 +80,7 @@ public class PlayerStateCol : MonoBehaviour
                 
             }
         }
+        
     }
 
     private static void EnemyDieSound()

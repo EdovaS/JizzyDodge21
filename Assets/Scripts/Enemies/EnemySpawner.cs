@@ -45,7 +45,8 @@ public class EnemySpawner : MonoBehaviour
     
     private Enemy CreatePooledObject()
     {
-        Enemy instance = Instantiate(_Enemies[Random.Range(0,2)].GetComponent<Enemy>(), transform.position, quaternion.identity);
+        // We are using _levelData.MaxNumberOfEnemies enemies because in some levels there are different number of enemies.
+        Enemy instance = Instantiate(_Enemies[Random.Range(0, _levelData.MaxNumberOfEnemies)].GetComponent<Enemy>(), transform.position, quaternion.identity);
         instance.Disable += ReturnObjectToPool;
         instance.gameObject.SetActive(false);
         
