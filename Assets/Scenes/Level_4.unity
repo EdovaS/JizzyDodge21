@@ -5600,7 +5600,8 @@ MonoBehaviour:
   _shakeScript: {fileID: 616216942}
   _xEnemyParticleEffect: {fileID: 0}
   _yEnemyParticleEffect: {fileID: 0}
-  _animator: {fileID: 0}
+  _zEnemyParticleEffect: {fileID: 7716641013085588657}
+  _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
   onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
 --- !u!61 &499857253
@@ -17617,6 +17618,7 @@ MonoBehaviour:
   _shakeScript: {fileID: 616216942}
   _xEnemyParticleEffect: {fileID: 7845248486452665404}
   _yEnemyParticleEffect: {fileID: 1992216242944687881}
+  _zEnemyParticleEffect: {fileID: 0}
   _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
   onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
@@ -28028,7 +28030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1695909763
 Transform:
   m_ObjectHideFlags: 0
@@ -28921,6 +28923,7 @@ MonoBehaviour:
   _shakeScript: {fileID: 616216942}
   _xEnemyParticleEffect: {fileID: 7845248486452665404}
   _yEnemyParticleEffect: {fileID: 1992216242944687881}
+  _zEnemyParticleEffect: {fileID: 0}
   _animator: {fileID: 1414674514}
   onScoreIncreased: {fileID: 11400000, guid: be1f876b3b718cc49990ecae5e928398, type: 2}
   onGameOver: {fileID: 11400000, guid: 69c50594122959d40b333446f4b0eab7, type: 2}
@@ -31679,6 +31682,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7716641013085588657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 686716551425102401, guid: 39dec822d71b2b04294022d14c26676f, type: 3}
+  m_PrefabInstance: {fileID: 7102371282850569968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7787205324442478530
 GameObject:
   m_ObjectHideFlags: 0
