@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7256225110b9afc48801d2e70d7bf52e, type: 3}
+  m_Name: BlueGradient
+  m_EditorClassIdentifier: 
+  LeftHand: {fileID: -8755425145364821496, guid: b3830b505b362e643ba91ccfef57079a, type: 3}
+  RightHand: {fileID: -1825272016044057426, guid: b3830b505b362e643ba91ccfef57079a, type: 3}
+  LeftEye: {fileID: -2995288439875949352, guid: b3830b505b362e643ba91ccfef57079a, type: 3}
+  RightEye: {fileID: -5695559972399956354, guid: b3830b505b362e643ba91ccfef57079a, type: 3}
+  FaceBg: {fileID: 5736556026218676046, guid: b3830b505b362e643ba91ccfef57079a, type: 3}
+  Body: {fileID: -848116160044243141, guid: b3830b505b362e643ba91ccfef57079a, type: 3}
