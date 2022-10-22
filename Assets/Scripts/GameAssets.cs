@@ -23,7 +23,7 @@ public class GameAssets : MonoBehaviour
     
     [Header("Audio Data", order = 1)]
     public SoundAudioClip[] SoundAudioClipsArray;
-    
+
     [System.Serializable]
     public class SoundAudioClip
     {

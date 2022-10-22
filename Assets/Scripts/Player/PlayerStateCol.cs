@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -54,14 +55,20 @@ public class PlayerStateCol : MonoBehaviour
 
     private void GameOver()
     {
+        GameObject playerParentGameObject = transform.parent.gameObject;
+        
         // Player Die
-        transform.parent.gameObject.SetActive(false);
+        //playerParentGameObject.SetActive(false);
 
         // Actual Game Over event send.
         onGameOver.Raise();
 
         // Screen Shake
-        // Player Explode particle
+        // Player Explode Effect
+
+        playerParentGameObject.GetComponent<DieTweenPlayer>().PlayerDieEffect();
+
+
     }
 
     private void EnemyKill(GameObject enemyDieParticlePrefab, Collider2D other)
