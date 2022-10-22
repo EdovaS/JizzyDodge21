@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
    private GameData _levelData;
    
    [SerializeField] private GameObject _gameOverUI;
+   [SerializeField] private GameObject _gameWonUI;
    private float _scoreRef;
 
    private void Awake()
@@ -38,10 +39,9 @@ public class GameManager : MonoBehaviour
 
    private void Won()
    {
-      // ? Trigger The UI Animation of Won;
-      // LoadNextLevel()
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+      GameObject.FindGameObjectWithTag("Player").gameObject.SetActive(false);
+      _gameWonUI.gameObject.SetActive(true);
    }
-   
+
    
 }
