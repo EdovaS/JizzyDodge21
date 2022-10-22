@@ -56,8 +56,5 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: 70b32596cad8b634193f727b376f3c95, type: 3}
   - Sound: 3
     AudioClip: {fileID: 8300000, guid: ee026722cd000ac48a04c15cd3243c73, type: 3}
-  playerFlyPos:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - Sound: 4
+    AudioClip: {fileID: 8300000, guid: 6c406d3638d922d4daa2410681394b6d, type: 3}

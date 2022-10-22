@@ -30,8 +30,8 @@ public class GameManager : MonoBehaviour
    public void IncrementScoreReferenceVar()
    {
       _scoreRef += 1;
-      
-      if (_scoreRef > _levelData.MaxScore)
+
+      if (_scoreRef >= _levelData.MaxScore)
       {
          Won();
       }
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
    private void Won()
    {
       GameObject.FindGameObjectWithTag("Player").gameObject.SetActive(false);
+      SoundManager.PlaySound(SoundManager.Sound.PlayerWon);
       _gameWonUI.gameObject.SetActive(true);
    }
 

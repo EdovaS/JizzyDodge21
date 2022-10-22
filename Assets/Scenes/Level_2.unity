@@ -15656,7 +15656,7 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 547574776}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: IncrementScoreReferenceVar
         m_Mode: 1
@@ -15992,6 +15992,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Enemies:
   - {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
+  - {fileID: 4255590884536860739}
+  - {fileID: 916608412}
   - {fileID: 4255590884536860739}
 --- !u!1001 &606014976
 PrefabInstance:
@@ -17213,6 +17215,11 @@ Material:
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!1 &916608412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 910061239123191674, guid: a0a74f8534672154987295fdbc99c39b, type: 3}
+  m_PrefabInstance: {fileID: 606014976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &953067790
 GameObject:
   m_ObjectHideFlags: 0
@@ -23309,7 +23316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100/0
+  m_text: 50/0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef305b066b1325847a518c420356f2be, type: 2}
   m_sharedMaterial: {fileID: -183827912248910436, guid: ef305b066b1325847a518c420356f2be, type: 2}

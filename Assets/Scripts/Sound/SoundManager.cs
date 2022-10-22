@@ -7,7 +7,8 @@ public static class SoundManager
         PlayerDie,
         EnemyDie1,
         EnemyDie2,
-        EnemyDie3
+        EnemyDie3,
+        PlayerWon
     }
     
     

@@ -1047,6 +1047,7 @@ MonoBehaviour:
   _shakeScript: {fileID: 0}
   _xEnemyParticleEffect: {fileID: 0}
   _yEnemyParticleEffect: {fileID: 0}
+  _zEnemyParticleEffect: {fileID: 0}
   _animator: {fileID: 0}
   onScoreIncreased: {fileID: 0}
   onGameOver: {fileID: 0}
@@ -1260,6 +1261,7 @@ MonoBehaviour:
   _shakeScript: {fileID: 0}
   _xEnemyParticleEffect: {fileID: 7845248486522119098, guid: 98603a7f41af2c14484f09551c14bc32, type: 3}
   _yEnemyParticleEffect: {fileID: 1992216243695534438, guid: c3261c9f06fad6140ae7d1f2fea62c2b, type: 3}
+  _zEnemyParticleEffect: {fileID: 0}
   _animator: {fileID: 81464198}
   onScoreIncreased: {fileID: 0}
   onGameOver: {fileID: 0}
@@ -1739,7 +1741,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1495988834}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1495988836}
+        m_TargetAssemblyTypeName: Start, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1495988834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,6 +1950,7 @@ MonoBehaviour:
   _shakeScript: {fileID: 0}
   _xEnemyParticleEffect: {fileID: 7845248486522119098, guid: 98603a7f41af2c14484f09551c14bc32, type: 3}
   _yEnemyParticleEffect: {fileID: 1992216243695534438, guid: c3261c9f06fad6140ae7d1f2fea62c2b, type: 3}
+  _zEnemyParticleEffect: {fileID: 0}
   _animator: {fileID: 81464198}
   onScoreIncreased: {fileID: 0}
   onGameOver: {fileID: 0}
