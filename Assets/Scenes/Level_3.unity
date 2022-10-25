@@ -23077,6 +23077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreTextTMP: {fileID: 1446540704}
+  _gmOverScoreShow: {fileID: 2035279087}
 --- !u!1 &1446540702
 GameObject:
   m_ObjectHideFlags: 0
@@ -29166,7 +29167,7 @@ GameObject:
   - component: {fileID: 2035279088}
   - component: {fileID: 2035279087}
   m_Layer: 5
-  m_Name: Text_Score
+  m_Name: txt - RefScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

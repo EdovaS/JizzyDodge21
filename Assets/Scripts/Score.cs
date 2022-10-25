@@ -11,6 +11,8 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI ScoreTextTMP;
     private GameData _levelData;
     private int _scoreNumber;
+    [SerializeField] private TextMeshProUGUI _gmOverScoreShow;
+    
 
     private void Awake()
     {
@@ -35,7 +37,9 @@ public class Score : MonoBehaviour
         _levelData.AddToScore(1);
         _levelData.AddToHit(1);
         PopUpTween();
-        ScoreTextTMP.text = _levelData.MaxScore + "/" + _levelData.GetScore();
+        ScoreTextTMP.text = _levelData.MaxScore + "/" + _levelData.GetScore(); // Actual Score being increased.
+        _gmOverScoreShow.text = _levelData.MaxScore + "/" + _levelData.GetScore(); // GmOver Ref Score being increased.
+        
     }
 
     void PopUpTween()
