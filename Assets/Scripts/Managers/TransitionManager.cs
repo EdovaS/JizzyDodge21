@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,6 +33,7 @@ public class TransitionManager : MonoBehaviour
     }
     
     // Will called From Button in UI
+    [Button]
     public void NextLevelBtnClicked()
     {
         if(SceneManager.GetActiveScene().buildIndex == 5) return;
@@ -46,6 +48,19 @@ public class TransitionManager : MonoBehaviour
 
 
         // if (SceneManager.GetActiveScene().buildIndex + 1 > PlayerPrefs.GetInt("levelAt"));
+    }
+    
+    // ! Test Only
+    [Button]
+    private void LoadSceneLevelSelect()
+    {
+        SceneManager.LoadScene("LevelSelect");
+    }
+
+    [Button]
+    private void DeletePlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
     }
     
 }
