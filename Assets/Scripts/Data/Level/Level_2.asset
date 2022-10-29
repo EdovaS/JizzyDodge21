@@ -24,3 +24,4 @@ MonoBehaviour:
   EnemySpeedIncrement: -1
   TimeBetweenSpawnDecrement: 0.2
   EveryHit: 8
+  CanSpawn: 1

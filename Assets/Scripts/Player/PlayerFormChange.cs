@@ -46,6 +46,9 @@ public class PlayerFormChange : MonoBehaviour
     
     // Main scriptable objects that is responsible for changing player sprites.
     private PlayerForm _playerForm;
+    
+    private Vector3 _origionalPos;
+    private Quaternion _origionalRotation;
 
     private void Start()
     {
@@ -66,7 +69,11 @@ public class PlayerFormChange : MonoBehaviour
         _bodySpriteRenderer = Body.GetComponent<SpriteRenderer>();
 
         #endregion
-        
+
+        // setting the values on Start
+        _origionalPos = transform.position;
+        _origionalRotation = Quaternion.identity;
+
     }
 
     private void Update()
@@ -129,5 +136,11 @@ public class PlayerFormChange : MonoBehaviour
             _stateSecondCollider.SetActive(false);    
         }
         
+    }
+
+    public void SetPlayerPos()
+    {
+        transform.position = _origionalPos;
+        transform.rotation = _origionalRotation;
     }
 }

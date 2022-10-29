@@ -4,14 +4,20 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
    private GameData _levelData;
    
+   [TitleGroup("References")]
    [SerializeField] private GameObject _gameOverUI;
    [SerializeField] private GameObject _gameWonUI;
+
    private float _scoreRef;
+   
+   [TitleGroup("GameEvent")] 
+   public GameEvent OnRevive;
 
    private void Awake()
    {
@@ -25,6 +31,7 @@ public class GameManager : MonoBehaviour
    public void GameOver()
    {
       _gameOverUI.SetActive(true);
+      _levelData.CanSpawn = false;
    }
 
    // Called Using Event in Inspector
@@ -37,14 +44,20 @@ public class GameManager : MonoBehaviour
          Won();
       }
    }
-
-   [Button]
+   
    private void Won()
    {
       GameObject.FindGameObjectWithTag("Player").gameObject.SetActive(false);
       SoundManager.PlaySound(SoundManager.Sound.PlayerWon);
       _gameWonUI.gameObject.SetActive(true);
    }
-
    
+   // Revive
+   [Button]
+   public void Revive()
+   {
+      OnRevive.Raise();
+      _gameOverUI.SetActive(false);
+      _levelData.CanSpawn = true;
+   }
 }

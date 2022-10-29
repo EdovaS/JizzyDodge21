@@ -22,6 +22,8 @@ public class EnemySpawner : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 3) _levelData = GameAssets.i.Level_3_Data;
         if (SceneManager.GetActiveScene().buildIndex == 4) _levelData = GameAssets.i.Level_4_Data;
         if (SceneManager.GetActiveScene().buildIndex == 5) _levelData = GameAssets.i.Level_5_Data;
+        
+        _levelData.CanSpawn = true;
     }
 
     private void Start()
@@ -32,7 +34,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        _time += Time.deltaTime;
+        if (_levelData.CanSpawn == false) return; // If canSpawn is false then don't Spawn;
+
+            _time += Time.deltaTime;
 
         if (_time > _levelData.GetTimeBetweenSpawn())
         {

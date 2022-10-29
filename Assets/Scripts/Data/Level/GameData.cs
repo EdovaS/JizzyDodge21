@@ -1,35 +1,38 @@
-using KevinCastejon.MoreAttributes;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "LevelData", menuName = "ScriptableObjects/LevelData", order = 2)]
 public class GameData : ScriptableObject
 {
-    [Header("Readonly Variables", order = 0)]
+    [TitleGroup("Readonly Variables")]
     // ? Main Variables
     [ReadOnly] [SerializeField] private float _score;
     [ReadOnly] [SerializeField] private float _enemySpeed = -10;
     [ReadOnly] [SerializeField] private float _timeBetweenSpawn = 1.5f;
     
-    [Header("Minimum Values", order = 1)]
+    [TitleGroup("Minimum Values")]
     [SerializeField] public float MinimumTimeBetweenSpawn = 0.3f;
     [SerializeField] public float MaxEnemySpeed;
-
-    [Header("Starting Values", order = 2)] 
+    
+    [TitleGroup("Starting Values")]
     public float StartingEnemySpeed;
     public float StartingTimeBetweenSpawn;
     public float MaxScore;
-
-    [Header("Number of Enemies this level.", order = 3)] // Used at a max random value for enemy spawning;
-    public int MaxNumberOfEnemies; 
     
+    [TitleGroup("Number of Enemies this level")] // Used at a max random value for enemy spawning;
+    public int MaxNumberOfEnemies;
+
     private float _hit;
     
-    [Header("Difficulty Values", order = 4)]
+    [TitleGroup("Difficulty Values")]
     public float EnemySpeedIncrement;
     public float TimeBetweenSpawnDecrement;
+    
+    [TitleGroup("Every X Hit Difficulty Increases")]
+    public int EveryHit;
 
-    [Header("Every X Hit Difficulty Increases", order = 2)] public int EveryHit;
+    [TitleGroup("Spawn Boolean")] public bool CanSpawn; // It will be by default set to true on Awake. EnemySpawner.cs
     
 
     // ? Set value Functions
