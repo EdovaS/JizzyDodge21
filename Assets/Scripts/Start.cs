@@ -19,6 +19,6 @@ public class Start : MonoBehaviour
 
     private void LoadScene1()
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("LevelSelect");
     }
 }

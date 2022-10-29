@@ -34,9 +34,18 @@ public class TransitionManager : MonoBehaviour
     // Will called From Button in UI
     public void NextLevelBtnClicked()
     {
+        if(SceneManager.GetActiveScene().buildIndex == 5) return;
+        
         // ? Trigger The UI Animation of Won;
         EndingSceneTransition();
         FunctionTimer.Create(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1), 1.1f);
+        
+        // set un-lockable levels
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("levelAt", nextSceneIndex);
+
+
+        // if (SceneManager.GetActiveScene().buildIndex + 1 > PlayerPrefs.GetInt("levelAt"));
     }
     
 }
