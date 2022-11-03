@@ -9952,6 +9952,7 @@ GameObject:
   - component: {fileID: 547574775}
   - component: {fileID: 547574777}
   - component: {fileID: 547574778}
+  - component: {fileID: 547574779}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10016,6 +10017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverUI: {fileID: 1638598583}
   _gameWonUI: {fileID: 1494000359}
+  OnRevive: {fileID: 11400000, guid: 2045256e1c4a0994e8bf80736f6422cc, type: 2}
 --- !u!114 &547574777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10058,6 +10060,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingSceneTransition: {fileID: 510002778947053452}
   _endingSceneTransition: {fileID: 1529405516}
+--- !u!114 &547574779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547574773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686fb30386f14c0498b433fa9e466f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &616216936
 GameObject:
   m_ObjectHideFlags: 0

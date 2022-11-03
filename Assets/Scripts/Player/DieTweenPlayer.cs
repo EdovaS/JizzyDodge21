@@ -7,8 +7,8 @@ public class DieTweenPlayer : MonoBehaviour
     {
         Vector3 rotation = new Vector3(transform.rotation.x, transform.rotation.y, 1000);    
         
-        transform.DORotate(rotation, 5f, RotateMode.FastBeyond360);         
+        transform.DORotate(rotation, 0.5f, RotateMode.FastBeyond360);         
         int randomMovePos = Random.Range(0, 4);         
-        transform.DOMove(_flyTransform[randomMovePos].position, 5f);
+        transform.DOMove(_flyTransform[randomMovePos].position, 0.5f);
     }      
 }

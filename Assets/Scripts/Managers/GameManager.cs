@@ -45,11 +45,15 @@ public class GameManager : MonoBehaviour
       }
    }
    
+   [Button]
    private void Won()
    {
       GameObject.FindGameObjectWithTag("Player").gameObject.SetActive(false);
       SoundManager.PlaySound(SoundManager.Sound.PlayerWon);
       _gameWonUI.gameObject.SetActive(true);
+      
+      // restCanShowAd
+      GetComponent<YodoReward>().CanShowAd = true;
    }
    
    // Revive
@@ -58,6 +62,6 @@ public class GameManager : MonoBehaviour
    {
       OnRevive.Raise();
       _gameOverUI.SetActive(false);
-      _levelData.CanSpawn = true;
+      FunctionTimer.Create((() => _levelData.CanSpawn = true), 1f);
    }
 }

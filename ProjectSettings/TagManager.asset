@@ -8,6 +8,7 @@ TagManager:
   - EnemyOne
   - EnemySecond
   - EnemyDefault
+  - GameManager
   layers:
   - Default
   - TransparentFX
