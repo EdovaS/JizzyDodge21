@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: LeftEye
@@ -111,7 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -4, y: 185}
+    uvTransform: {x: 391, y: 467}
+    spritePosition: {x: 395, y: 282}
   - name: RightEye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +135,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 114, y: 185}
+    uvTransform: {x: 434, y: 467}
+    spritePosition: {x: 320, y: 282}
   - name: FaceBg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -153,7 +157,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -256, y: 226}
+    uvTransform: {x: 4, y: 468}
+    spritePosition: {x: 260, y: 242}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -174,7 +179,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -122, y: -70}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 126, y: 74}
   - name: LeftHand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -195,7 +201,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -316, y: 307}
+    uvTransform: {x: 209, y: 467}
+    spritePosition: {x: 525, y: 160}
   - name: RightHand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -216,7 +223,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 252, y: 320}
+    uvTransform: {x: 299, y: 467}
+    spritePosition: {x: 47, y: 147}
   characterData:
     bones: []
     parts: []

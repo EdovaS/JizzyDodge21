@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: LeftEye
@@ -111,7 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1, y: 176}
+    uvTransform: {x: 390, y: 460}
+    spritePosition: {x: 389, y: 284}
   - name: RightEye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +135,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 120, y: 176}
+    uvTransform: {x: 434, y: 460}
+    spritePosition: {x: 314, y: 284}
   - name: Hand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -153,7 +157,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -317, y: 301}
+    uvTransform: {x: 208, y: 460}
+    spritePosition: {x: 525, y: 159}
   - name: Hand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -174,7 +179,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 253, y: 310}
+    uvTransform: {x: 299, y: 460}
+    spritePosition: {x: 46, y: 150}
   - name: FaceBg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -195,7 +201,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -252, y: 214}
+    uvTransform: {x: 3, y: 460}
+    spritePosition: {x: 255, y: 246}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -216,7 +223,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -120, y: -78}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 124, y: 82}
   characterData:
     bones: []
     parts: []

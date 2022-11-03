@@ -13,6 +13,19 @@ public class Yodo1Adds : MonoBehaviour
         Yodo1U3dMas.SetAdBuildConfig(config);
         
         Yodo1U3dMas.InitializeMasSdk();
+
+        Yodo1U3dMasCallback.OnSdkInitializedEvent += (success, error) =>
+        {
+            Debug.Log("[Yodo1 Mas] OnSdkInitializedEvent, success:" + success + ", error: " + error.ToString());
+            if (success)
+            {
+                Debug.Log("[Yodo1 Mas] The initialization has succeeded");
+            }
+            else
+            {
+                Debug.Log("[Yodo1 Mas] The initialization has failed");
+            }
+        };
     }
     
 }
