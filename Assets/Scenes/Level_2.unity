@@ -15642,7 +15642,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverUI: {fileID: 1638598583}
   _gameWonUI: {fileID: 14701312}
-  _yodoRewardScript: {fileID: 1384296912}
   OnRevive: {fileID: 11400000, guid: 2045256e1c4a0994e8bf80736f6422cc, type: 2}
 --- !u!114 &547574777
 MonoBehaviour:
@@ -15686,7 +15685,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingSceneTransition: {fileID: 1585084554}
   _endingSceneTransition: {fileID: 542140821}
-  _yodoRewardScript: {fileID: 1384296912}
 --- !u!114 &547574779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18194,6 +18192,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 19.908
       objectReference: {fileID: 0}
+    - target: {fileID: 2581447174019169869, guid: fb48e58240381db42bae403e303b68bd, type: 3}
+      propertyPath: OnAdReceivedReward.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 547574776}
+    - target: {fileID: 2581447174019169869, guid: fb48e58240381db42bae403e303b68bd, type: 3}
+      propertyPath: OnAdReceivedReward.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Revive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb48e58240381db42bae403e303b68bd, type: 3}
 --- !u!224 &1384296911 stripped
@@ -18201,17 +18207,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1630599071673362990, guid: fb48e58240381db42bae403e303b68bd, type: 3}
   m_PrefabInstance: {fileID: 1384296910}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1384296912 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1630599071673362986, guid: fb48e58240381db42bae403e303b68bd, type: 3}
-  m_PrefabInstance: {fileID: 1384296910}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f6762a4f9e01546b8a7be17981397f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1398285421
 GameObject:
   m_ObjectHideFlags: 0
@@ -29357,6 +29352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -29373,6 +29369,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &2035279085
 GameObject:
   m_ObjectHideFlags: 0

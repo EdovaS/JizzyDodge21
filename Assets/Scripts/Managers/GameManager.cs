@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
    [TitleGroup("References")]
    [SerializeField] private GameObject _gameOverUI;
    [SerializeField] private GameObject _gameWonUI;
-   [SerializeField] private YodoReward _yodoRewardScript;
+   //[SerializeField] private YodoReward _yodoRewardScript;
 
    private float _scoreRef;
    
@@ -32,8 +32,8 @@ public class GameManager : MonoBehaviour
 
    private void Start()
    {
-      _yodoRewardScript.InitializeRewardedAds();
-      _yodoRewardScript.RequestRewardedAds();
+      /*_yodoRewardScript.InitializeRewardedAds();
+      _yodoRewardScript.RequestRewardedAds();*/
    }
 
    public void GameOver()
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
       _gameWonUI.gameObject.SetActive(true);
       
       // restCanShowAd
-      _yodoRewardScript.CanShowAd = true;
+      //_yodoRewardScript.CanShowAd = true;
    }
    
    // Revive
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
    public void Revive()
    {
       
-      _yodoRewardScript.CanShowAd = false;
+      //_yodoRewardScript.CanShowAd = false;
       
       OnRevive.Raise();
       _gameOverUI.SetActive(false);

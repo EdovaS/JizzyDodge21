@@ -9,7 +9,7 @@ public class TransitionManager : MonoBehaviour
     [TitleGroup("References")]
     [SerializeField] private GameObject _startingSceneTransition;
     [SerializeField] private GameObject _endingSceneTransition;
-    [SerializeField] private YodoReward _yodoRewardScript;
+    //[SerializeField] private YodoReward _yodoRewardScript;
     
     
     void Awake()
@@ -30,7 +30,7 @@ public class TransitionManager : MonoBehaviour
     // Will called From Button in UI
     public void RestartLevel()
     {
-        _yodoRewardScript.CanShowAd = true; // reseting can show ad, so ad come;
+        //_yodoRewardScript.CanShowAd = true; // reseting can show ad, so ad come;
         _endingSceneTransition.gameObject.SetActive(true);
         FunctionTimer.Create(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex), 1.1f);
 

@@ -6332,6 +6332,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 19.908
       objectReference: {fileID: 0}
+    - target: {fileID: 2581447174019169869, guid: fb48e58240381db42bae403e303b68bd, type: 3}
+      propertyPath: OnAdReceivedReward.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 547574776}
+    - target: {fileID: 2581447174019169869, guid: fb48e58240381db42bae403e303b68bd, type: 3}
+      propertyPath: OnAdReceivedReward.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Revive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb48e58240381db42bae403e303b68bd, type: 3}
 --- !u!224 &605599286 stripped
@@ -29151,6 +29159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -29167,6 +29176,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1001 &2017876019
 PrefabInstance:
   m_ObjectHideFlags: 0
