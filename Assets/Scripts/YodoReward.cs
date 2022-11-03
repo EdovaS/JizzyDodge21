@@ -14,11 +14,12 @@ public class YodoReward : MonoBehaviour
     
     public void Start()
     {
-        this.InitializeRewardedAds();
-        this.RequestRewardedAds();
+        InitializeRewardedAds();
+        RequestRewardedAds();
+        CanShowAd = true;
     }
 
-    private void InitializeRewardedAds()
+    public void InitializeRewardedAds()
     {
         // Instantiate
         Yodo1U3dRewardAd.GetInstance();
@@ -32,7 +33,7 @@ public class YodoReward : MonoBehaviour
         Yodo1U3dRewardAd.GetInstance().OnAdEarnedEvent += OnRewardAdEarnedEvent;
     }
 
-    private void RequestRewardedAds()
+    public void RequestRewardedAds()
     {
         Yodo1U3dRewardAd.GetInstance().LoadAd();
     }
@@ -40,7 +41,7 @@ public class YodoReward : MonoBehaviour
     public void ShowRewardedAds()
     {
         bool isLoaded = Yodo1U3dRewardAd.GetInstance().IsLoaded();
-
+        print("BtnClicking");
         if(isLoaded) Yodo1U3dRewardAd.GetInstance().ShowAd();
     }
 
@@ -79,15 +80,20 @@ public class YodoReward : MonoBehaviour
     {
         Debug.Log("[Yodo1 Mas] OnRewardAdEarnedEvent event received");
         // Add your reward code here
+
         _gameManager.Revive();
 
-        if(!CanShowAd) return; // return if player has watched already.
-        
         // make so the player can only revive once
-        CanShowAd = true;
         Button reviveButton = GetComponent<Button>();
         reviveButton.interactable = false;
         reviveButton.GetComponent<Image>().enabled = false;
+        
+        if (CanShowAd == true)
+        {
+                
+        } 
+        
+        
         
 
     }

@@ -5861,7 +5861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverUI: {fileID: 1638598583}
   _gameWonUI: {fileID: 1374764802}
-  OnRevive: {fileID: 0}
+  _yodoRewardScript: {fileID: 605599287}
+  OnRevive: {fileID: 11400000, guid: 2045256e1c4a0994e8bf80736f6422cc, type: 2}
 --- !u!114 &547574777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5904,6 +5905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingSceneTransition: {fileID: 760279722}
   _endingSceneTransition: {fileID: 2017876020}
+  _yodoRewardScript: {fileID: 605599287}
 --- !u!114 &547574779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5911,7 +5913,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547574773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 686fb30386f14c0498b433fa9e466f81, type: 3}
   m_Name: 
@@ -6337,6 +6339,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1630599071673362990, guid: fb48e58240381db42bae403e303b68bd, type: 3}
   m_PrefabInstance: {fileID: 605599285}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &605599287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1630599071673362986, guid: fb48e58240381db42bae403e303b68bd, type: 3}
+  m_PrefabInstance: {fileID: 605599285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f6762a4f9e01546b8a7be17981397f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &616216936
 GameObject:
   m_ObjectHideFlags: 0
