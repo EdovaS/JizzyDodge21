@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData:
   - name: Gorund
     originalName: 
@@ -111,6 +113,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 520, y: 3356}
+    spritePosition: {x: 0, y: 0}
   - name: Color_Below_Ground
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -132,6 +135,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 2172}
+    spritePosition: {x: 0, y: 0}
   - name: Small_YellowTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -153,6 +157,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -3134, y: 6052}
+    spritePosition: {x: 0, y: 0}
   - name: Small_RedTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -174,6 +179,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -223, y: 5313}
+    spritePosition: {x: 0, y: 0}
   - name: Big_OrangeTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -195,6 +201,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -1244, y: 3070}
+    spritePosition: {x: 0, y: 0}
   - name: BigYellowTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -216,6 +223,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -1814, y: 4394}
+    spritePosition: {x: 0, y: 0}
   - name: Bushes_Small
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -237,6 +245,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1541, y: 1682}
+    spritePosition: {x: 0, y: 0}
   - name: Bushes_Big
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -258,6 +267,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -1208, y: 6731}
+    spritePosition: {x: 0, y: 0}
   - name: Clouds
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -279,6 +289,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -1072, y: 2176}
+    spritePosition: {x: 0, y: 0}
   - name: Bg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -300,6 +311,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
   rigSpriteImportData:
   - name: Gorund
     originalName: 
@@ -309,7 +321,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 794
-      y: 3560
+      y: 3590
       width: 3246
       height: 307
     spriteID: 3c8fe99aa719b1f488ec9009a15c5af5
@@ -321,7 +333,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 520, y: 3356}
+    uvTransform: {x: 794, y: 3590}
+    spritePosition: {x: 274, y: 204}
   - name: Color_Below_Ground
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -330,7 +343,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2172
+      y: 2202
       width: 3840
       height: 496
     spriteID: 5887ddac6473ece46befad5590fbb0a8
@@ -342,7 +355,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 2172}
+    uvTransform: {x: 4, y: 2202}
+    spritePosition: {x: 0, y: 0}
   - name: Small_YellowTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -351,7 +365,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 6564
+      y: 6594
       width: 517
       height: 643
     spriteID: 6c8b495f50c45bf45b2043b8eeaeee66
@@ -363,7 +377,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -3134, y: 6052}
+    uvTransform: {x: 4, y: 6594}
+    spritePosition: {x: 3138, y: 512}
   - name: Small_RedTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -372,7 +387,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 5805
+      y: 5835
       width: 445
       height: 751
     spriteID: 627348d2db9eabc498ca44b47fb8d17d
@@ -384,7 +399,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -223, y: 5313}
+    uvTransform: {x: 4, y: 5835}
+    spritePosition: {x: 227, y: 492}
   - name: Big_OrangeTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -393,7 +409,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 3560
+      y: 3590
       width: 782
       height: 1316
     spriteID: 725f4b442be6cbe4bbc6901935df988d
@@ -405,7 +421,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1244, y: 3070}
+    uvTransform: {x: 4, y: 3590}
+    spritePosition: {x: 1248, y: 490}
   - name: BigYellowTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -414,7 +431,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4884
+      y: 4914
       width: 729
       height: 913
     spriteID: 5db33cf871625954aab7bfe781a86869
@@ -426,7 +443,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1814, y: 4394}
+    uvTransform: {x: 4, y: 4914}
+    spritePosition: {x: 1818, y: 490}
   - name: Bushes_Small
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -434,8 +452,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3852
-      y: 2172
+      x: 370
+      y: 7245
       width: 150
       height: 128
     spriteID: 2b1924a2dbe16164a9a0002d0ba83795
@@ -447,7 +465,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1541, y: 1682}
+    uvTransform: {x: 370, y: 7245}
+    spritePosition: {x: 2311, y: 490}
   - name: Bushes_Big
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -456,7 +475,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 7215
+      y: 7245
       width: 358
       height: 220
     spriteID: 594e68c2be88092449489ac28e278745
@@ -468,7 +487,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1208, y: 6731}
+    uvTransform: {x: 4, y: 7245}
+    spritePosition: {x: 1212, y: 484}
   - name: Clouds
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -477,7 +497,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2676
+      y: 2706
       width: 1627
       height: 876
     spriteID: 10762f296a7cc434aae5b4b4bb97f4c3
@@ -489,7 +509,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1072, y: 2176}
+    uvTransform: {x: 4, y: 2706}
+    spritePosition: {x: 1076, y: 500}
   - name: Bg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -511,6 +532,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: -26, y: -15}
   characterData:
     bones: []
     parts: []
@@ -702,7 +724,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 3c8fe99aa719b1f488ec9009a15c5af5
     layerID: 127
-    mosaicPosition: {x: 794, y: 3560}
+    mosaicPosition: {x: 794, y: 3590}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -712,7 +734,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 5887ddac6473ece46befad5590fbb0a8
     layerID: 177
-    mosaicPosition: {x: 4, y: 2172}
+    mosaicPosition: {x: 4, y: 2202}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -722,7 +744,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 6c8b495f50c45bf45b2043b8eeaeee66
     layerID: 174
-    mosaicPosition: {x: 4, y: 6564}
+    mosaicPosition: {x: 4, y: 6594}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -732,7 +754,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 627348d2db9eabc498ca44b47fb8d17d
     layerID: 173
-    mosaicPosition: {x: 4, y: 5805}
+    mosaicPosition: {x: 4, y: 5835}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -742,7 +764,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 725f4b442be6cbe4bbc6901935df988d
     layerID: 176
-    mosaicPosition: {x: 4, y: 3560}
+    mosaicPosition: {x: 4, y: 3590}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -752,7 +774,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 5db33cf871625954aab7bfe781a86869
     layerID: 175
-    mosaicPosition: {x: 4, y: 4884}
+    mosaicPosition: {x: 4, y: 4914}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -762,7 +784,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 2b1924a2dbe16164a9a0002d0ba83795
     layerID: 157
-    mosaicPosition: {x: 3852, y: 2172}
+    mosaicPosition: {x: 370, y: 7245}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -772,7 +794,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 594e68c2be88092449489ac28e278745
     layerID: 160
-    mosaicPosition: {x: 4, y: 7215}
+    mosaicPosition: {x: 4, y: 7245}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -782,7 +804,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 10762f296a7cc434aae5b4b4bb97f4c3
     layerID: 167
-    mosaicPosition: {x: 4, y: 2676}
+    mosaicPosition: {x: 4, y: 2706}
     flatten: 0
     isImported: 1
     isVisible: 1

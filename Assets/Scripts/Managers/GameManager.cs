@@ -13,11 +13,13 @@ public class GameManager : MonoBehaviour
    [TitleGroup("References")]
    [SerializeField] private GameObject _gameOverUI;
    [SerializeField] private GameObject _gameWonUI;
+   //[SerializeField] private YodoReward _yodoRewardScript;
 
    private float _scoreRef;
    
    [TitleGroup("GameEvent")] 
    public GameEvent OnRevive;
+
 
    private void Awake()
    {
@@ -27,7 +29,13 @@ public class GameManager : MonoBehaviour
       if (SceneManager.GetActiveScene().buildIndex == 4) _levelData = GameAssets.i.Level_4_Data;
       if (SceneManager.GetActiveScene().buildIndex == 5) _levelData = GameAssets.i.Level_5_Data;
    }
-   
+
+   private void Start()
+   {
+      /*_yodoRewardScript.InitializeRewardedAds();
+      _yodoRewardScript.RequestRewardedAds();*/
+   }
+
    public void GameOver()
    {
       _gameOverUI.SetActive(true);
@@ -45,19 +53,26 @@ public class GameManager : MonoBehaviour
       }
    }
    
+   [Button]
    private void Won()
    {
       GameObject.FindGameObjectWithTag("Player").gameObject.SetActive(false);
       SoundManager.PlaySound(SoundManager.Sound.PlayerWon);
       _gameWonUI.gameObject.SetActive(true);
+      
+      // restCanShowAd
+      //_yodoRewardScript.CanShowAd = true;
    }
    
    // Revive
    [Button]
    public void Revive()
    {
+      
+      //_yodoRewardScript.CanShowAd = false;
+      
       OnRevive.Raise();
       _gameOverUI.SetActive(false);
-      _levelData.CanSpawn = true;
+      FunctionTimer.Create((() => _levelData.CanSpawn = true), 1f);
    }
 }

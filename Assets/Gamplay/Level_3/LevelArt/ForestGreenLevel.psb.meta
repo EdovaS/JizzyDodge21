@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Ground
@@ -111,7 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 406, y: 3058}
+    uvTransform: {x: 707, y: 3475}
+    spritePosition: {x: 301, y: 417}
   - name: SmallBush
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +135,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 833, y: 2178}
+    uvTransform: {x: 3729, y: 2601}
+    spritePosition: {x: 2896, y: 423}
   - name: Plant1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -153,7 +157,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1755, y: 2391}
+    uvTransform: {x: 3368, y: 2826}
+    spritePosition: {x: 1613, y: 435}
   - name: Plant2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -174,7 +179,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1357, y: 1748}
+    uvTransform: {x: 3854, y: 2175}
+    spritePosition: {x: 2497, y: 427}
   - name: BigBush
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -195,7 +201,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1530, y: 2178}
+    uvTransform: {x: 3368, y: 2601}
+    spritePosition: {x: 1838, y: 423}
   - name: SmallRedTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -216,7 +223,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -174, y: 2173}
+    uvTransform: {x: 3049, y: 2601}
+    spritePosition: {x: 3223, y: 428}
   - name: BigRedTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -237,7 +245,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -2114, y: 4366}
+    uvTransform: {x: 4, y: 4783}
+    spritePosition: {x: 2118, y: 417}
   - name: SmallGreenTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -258,7 +267,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2345, y: 2173}
+    uvTransform: {x: 2577, y: 2601}
+    spritePosition: {x: 232, y: 428}
   - name: BigGreenTree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -279,7 +289,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1186, y: 3047}
+    uvTransform: {x: 4, y: 3475}
+    spritePosition: {x: 1190, y: 428}
   - name: BgWhite
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -300,7 +311,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1207, y: 2164}
+    uvTransform: {x: 4, y: 2601}
+    spritePosition: {x: 1211, y: 437}
   - name: WatteryGround
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -321,7 +333,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 0, y: 2175}
+    uvTransform: {x: 4, y: 2175}
+    spritePosition: {x: 4, y: 0}
   - name: Sun
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -342,7 +355,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 108, y: 1721}
+    uvTransform: {x: 1619, y: 2601}
+    spritePosition: {x: 1511, y: 880}
   - name: BackGround
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -364,6 +378,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
   characterData:
     bones: []
     parts: []
